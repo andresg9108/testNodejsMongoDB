@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="css/principal.css" />
+
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="js/principal.js"></script>
+</head>
+<body>
+    <div id="formul">
+        <form method="post" onsubmit="return agregar_usuario()">
+            <h2>Libreta</h2>
+            <input type="text" id="nom" name="nom" placeholder="Nombre" />
+            <span id="enom"></span>
+            <br />
+            <input type="text" id="ape" name="ape" placeholder="Apellido" />
+            <span id="eape"></span>
+            <br />
+            <input type="text" id="tel" name="tel" placeholder="Telefono" />
+            <span id="etel"></span>
+            <br />
+            <input type="text" id="ed" name="ed" placeholder="Edad" />
+            <span id="eed"></span>
+            <br />
+            <input type="submit" value="Enviar" />
+        </form>
+    </div>
+    <div id="datos"></div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#datos, #formul{
+	padding: 10px;
+	color: white;
+}
+
+#datos{
+	background-color: blue;
+}
+
+#formul{
+	background-color: black;
+}
+
+#datos span{
+	color: orange;
+}
+
+#datos a{
+	color: red;
+}
