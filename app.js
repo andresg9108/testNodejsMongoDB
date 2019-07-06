@@ -1,7 +1,7 @@
 var express = require('express');
 var cors = require('cors');
 var bodyParser = require('body-parser');
-var peticion = require('./datos/peticion');
+var peticion = require('./peticion');
 var app = express();
 
 //Implementando cors
