@@ -19,7 +19,7 @@ function buscar_usuarios(){
                 var cont = 1;
                 $.each(response.respuesta,function (i,v){
                     var id = v._id;
-                    html += cont+") <span>"+v.nombre+" "+v.apellido+"</span> - Edad: "+v.edad+" Tel:"+v.telefono;
+                    html += cont+") <span>"+v.name+" "+v.lastname+"</span> - Edad: "+v.age+" Tel:"+v.phone;
                     var del = 'eliminar_usuarios("'+id+'")';
                     html += " <a href='#' onclick='"+del+"'>Eliminar</a>";
                     html += "<br />";

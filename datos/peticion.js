@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-var usuario = require('./models/usuario');
+var contact = require('./models/contact');
 
 mongoose.connect('mongodb://localhost/libreta');
 
@@ -10,7 +10,7 @@ db.on('error',function(){
 db.once('open', function() {
 });
 
-var modelUsu = usuario.getModel(mongoose);
+var modelUsu = contact.getModel(mongoose);
 
 function cargarDatos(app){
     app.get('/API/usuario', function (req, res, next) {
@@ -29,7 +29,7 @@ function cargarDatos(app){
                     if(!err){
                         resjson.transaccion = true;
                         resjson.error = "OK";
-                        resjson.respuesta = ordenar_asc(usuarios,"nombre");
+                        resjson.respuesta = ordenar_asc(usuarios,"name");
                         res.json(resjson);
                     }else{
                         resjson.transaccion = false;
@@ -59,10 +59,10 @@ function cargarDatos(app){
                 var tel = req.body.tel;
 	    		var ed = req.body.ed;
                 var obj = new modelUsu({
-                    nombre: nom,
-                    apellido: ape,
-                    telefono: tel,
-                    edad: ed
+                    name: nom,
+                    lastname: ape,
+                    phone: tel,
+                    age: ed
                 });
 
                 //Guardando el objeto.
