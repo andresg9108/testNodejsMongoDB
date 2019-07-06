@@ -52,10 +52,10 @@ function load(app){
         };
 
 	    if(request == "insert"){
-    		var nom = req.body.nom;
-    		var ape = req.body.ape;
-            var tel = req.body.tel;
-    		var ed = req.body.ed;
+    		var nom = req.body.name;
+    		var ape = req.body.lastname;
+            var tel = req.body.phone;
+    		var ed = req.body.age;
             var obj = new oMContact({
                 name: nom,
                 lastname: ape,

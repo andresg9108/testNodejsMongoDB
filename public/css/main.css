@@ -3,23 +3,23 @@
 	padding: 0;
 }
 
-#datos, #formul{
+#data, #myForm{
 	padding: 10px;
 	color: white;
 }
 
-#datos{
+#data{
 	background-color: blue;
 }
 
-#formul{
+#myForm{
 	background-color: black;
 }
 
-#datos span{
+#data span{
 	color: orange;
 }
 
-#datos a{
+#data a{
 	color: red;
 }

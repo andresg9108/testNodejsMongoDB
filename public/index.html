@@ -1,31 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title></title>
-    <link rel="stylesheet" type="text/css" href="css/principal.css" />
+	<title>Test Nodejs MongoDB</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
 
     <script src="/jquery/jquery.min.js"></script>
-    <script src="js/principal.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
-    <div id="formul">
-        <form method="post" onsubmit="return agregar_usuario()">
-            <h2>Libreta</h2>
-            <input type="text" id="nom" name="nom" placeholder="Nombre" />
-            <span id="enom"></span>
+    <div id="myForm">
+        <form method="post" onsubmit="return addContact()">
+            <input type="text" id="name" name="name" placeholder="Name" />
+            <span id="ename"></span>
             <br />
-            <input type="text" id="ape" name="ape" placeholder="Apellido" />
-            <span id="eape"></span>
+            <input type="text" id="lastname" name="lastname" placeholder="Last Name" />
+            <span id="elastname"></span>
             <br />
-            <input type="text" id="tel" name="tel" placeholder="Telefono" />
-            <span id="etel"></span>
+            <input type="text" id="phone" name="phone" placeholder="Phone" />
+            <span id="ephone"></span>
             <br />
-            <input type="text" id="ed" name="ed" placeholder="Edad" />
-            <span id="eed"></span>
+            <input type="text" id="age" name="age" placeholder="Age" />
+            <span id="eage"></span>
             <br />
-            <input type="submit" value="Enviar" />
+            <input type="submit" value="Send" />
         </form>
     </div>
-    <div id="datos"></div>
+    <div id="data"></div>
 </body>
 </html>
