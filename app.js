@@ -8,6 +8,8 @@ var iPort = 3000;
 oApp.use(oCors());
 
 oApp.use(oExpress.static(__dirname + '/public'));
+oApp.use('/jquery', oExpress.static(__dirname + '/node_modules/jquery/dist/'));
+
 
 oApp.use(oBodyParser.urlencoded({ extended: false }));
 
