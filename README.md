@@ -1,10 +1,18 @@
-# crud-nodejs-mongodb (@andresg9108)
+# Test Nodejs MongoDB
 
-1)	Instalar “NodeJS” y “MongoDB”.
-2)	Instalar Nodemon con "npm install -g nodemon".
-3)	Iniciar “MongoDB” con el comando “mongod”.
-4) Ejecutar en toda la raiz del proyecto "npm install".
-5)	Iniciar el servidor ejecutando el comando “nodemon app.js” en toda la raíz del proyecto.
-6)	Acceder desde tu navegador por el puerto que se indican en la consola.
+### Dependencies
 
-Y listo.
+<ol>
+	<li>Node.js (https://nodejs.org)</li>
+	<li>MongoDB (https://www.mongodb.com)</li>
+</ol>
+
+### Starting:
+
+<ol>
+	<li>Clone the repository.</li>
+	<li>Execute "npm install -g nodemon".</li>
+	<li>Execute "npm install", in the root of the project.</li>
+	<li>Start "MongoDB" with the "mongod" command in another terminal.</li>
+	<li>Execute "npm start", in the root of the project.</li>
+</ol>
