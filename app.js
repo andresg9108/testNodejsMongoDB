@@ -13,7 +13,7 @@ app.use(express.static(__dirname + '/public'));
 //extended: false significa que parsea solo string (no archivos de imagenes por ejemplo)
 app.use(bodyParser.urlencoded({ extended: false }));
 
-peticion.cargarDatos(app);
+peticion.load(app);
 
 app.listen(3000,function(){
     console.log('Puerto: 3000');

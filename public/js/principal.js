@@ -8,13 +8,13 @@ function buscar_usuarios(){
     var parametros = {};
     $.ajax({
         data:  parametros,
-        url:   'http://localhost:3000/API/usuario?solicitud=select&accion=todo',
+        url:   'http://localhost:3000/API/contact?request=select&action=all',
         type:  'get',
         beforeSend: function () {
             $("#datos").html("Procesando...");
         },
         success:  function (response) {
-            if(response.transaccion){
+            if(response.transaction){
                 var html = "";
                 var cont = 1;
                 $.each(response.respuesta,function (i,v){
@@ -50,7 +50,7 @@ function agregar_usuario(){
         };
         $.ajax({
             data:  parametros,
-            url:   'http://localhost:3000/API/usuario/?solicitud=insert&accion=usuario',
+            url:   'http://localhost:3000/API/contact/?request=insert',
             type:  'post',
             beforeSend: function () {
             },
@@ -69,7 +69,7 @@ function eliminar_usuarios(id){
     };
     $.ajax({
         data:  parametros,
-        url:   'http://localhost:3000/API/usuario?solicitud=delete&accion=usuario',
+        url:   'http://localhost:3000/API/contact?request=delete',
         type:  'post',
         beforeSend: function () {
         },
