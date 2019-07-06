@@ -1,6 +1,6 @@
 {
   "name": "testNodejsMongoDB",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Project in which Nodo.js is tested together with MongoDB.",
   "scripts": {
     "start": "nodemon app.js"
@@ -13,9 +13,9 @@
   "license": "MIT",
   "homepage": "https://github.com/andresg9108/testNodejsMongoDB",
   "dependencies": {
-    "body-parser": "^1.17.2",
-    "cors": "^2.8.3",
-    "express": "^4.15.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
     "jquery": "^3.4.1",
     "mongoose": "^4.10.6"
   }
