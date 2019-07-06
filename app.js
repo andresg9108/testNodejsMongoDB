@@ -1,20 +1,18 @@
-var express = require('express');
-var cors = require('cors');
-var bodyParser = require('body-parser');
-var peticion = require('./peticion');
-var app = express();
+var oExpress = require('express');
+var oCors = require('cors');
+var oBodyParser = require('body-parser');
+var oRequest = require('./request');
+var oApp = oExpress();
+var iPort = 3000;
 
-//Implementando cors
-app.use(cors());
+oApp.use(oCors());
 
-//especificamos el subdirectorio donde se encuentran las páginas estáticas
-app.use(express.static(__dirname + '/public'));
+oApp.use(oExpress.static(__dirname + '/public'));
 
-//extended: false significa que parsea solo string (no archivos de imagenes por ejemplo)
-app.use(bodyParser.urlencoded({ extended: false }));
+oApp.use(oBodyParser.urlencoded({ extended: false }));
 
-peticion.load(app);
+oRequest.load(oApp);
 
-app.listen(3000,function(){
-    console.log('Puerto: 3000');
+oApp.listen(iPort, function(){
+    console.log('Port: '+iPort);
 });
